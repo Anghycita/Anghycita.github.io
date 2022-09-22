@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.contenedor{
+           width: 100%; 
+			 
+		}
+		header{
+			width: 100%;
+          
+            background: #004D40;
+			display: flex;
+		}
+		.logo{
+			border: 2px #00FF33 solid;
+			padding: 10px;
+			margin: 15px;
+			color: white;
+		} 		
+		.menu{
+			width: 60%;		
+			margin: 15px;
+		}
+		ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+	    }
+	    li{
+	    	list-style: none;
+	    	color: white;
+	    	
+	    	width: 135px;
+	    	padding: 10px;
+	    		background:#5f72a9;
+	    		text-align: center;
+	    		text-transform: uppercase;
+	    		
+	    }
+	    a{text-decoration: none;
+	    	color :white;
+	    }
+	    figure{
+	    	display: flex;
+	    }
+	    .caja{
+	    	width: 50%; 
+	    	font-size: 25px;   	 
+	    }
+	    img{
+	    	width: 100%;
+	    	height: 500px;
+	    }
+	    section{
+           text-align: center;
+	    	background: #E30052;
+	    	padding: 30px;
+	    }
+ 		footer{
+	    	display: flex;
+	    }
+	    .subcaja{
+	    	width: 25%;
+	    	padding-left: 20px;
+	    	padding-right: 20px;
+	    	padding-top: 35px;
+	    	padding-bottom: 35px;
+	    	background: #0B5345 ;
+	    	text-align: justify;
+	    	color: #D5F5E3;	    	 
+	    }
+	    p{
+	    	font-size: 20px;
+	    	margin: 10px;
+	    }
+	    .formulario{
+	    	text-align: center;
+	    	background: #27AE60;
+	    	padding: 40px;
+	    }
+	    input{
+	    	width: 50%;
+	    	height: 35px;
+	    	border-radius: 4px;
+	    	margin: 10px;
+	    }
+	    h3{
+	    	text-align: center;
+	    	color: white;
+	    }
+	</style>
+ <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script type="text/javascript">
+	
+	 function Mensaje(){
+	 	var nombre=document.getElementById("nom").value;
+          alert(nombre);
+
+	 }
+	  function Mensaje2(){
+	 	var numero=document.getElementById("valor").value;
+        var resultado=numero*6.96; 
+          alert(resultado);
+
+	 }
+</script>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<strong>MANITOS VERDES A LA OBRA</strong>
+			</div>
+			<nav  class="menu">
+				<ul >
+					<li><a href="#"><i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+					<li><a href="#"><i class="fa-solid fa-users"></i> ¿QUIÉNES SOMOS?</a></li>
+					<li><a href="#"><i class="fa-brands fa-blogger-b"></i>PROGRAMA</a></li>
+					<li><a href="#"><i class="fa fa-handshake-o"></i> SERVICIOS</a></li>	
+					<li><a href="#"><i class="fa-solid fa-address-card"></i> CONTACTOS</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<figure>
+			<div class="caja">
+			<br>
+			Somos jóvenes estudiantes que buscan cuidar los pisos ecológicos y el área productiva de su comunidad, a través del cuidado y protección del Medio Ambiente, también buscamos crear fuentes de ingresos para las familias, a través de la compra de materiales reciclables.<br>
+            Estamos convencidas que el trabajo en equipo y el compromiso social, nos llevará a crear un ambiente de paz y armonía con la Madre Tierra y el Medio Ambiente.
+		    </div>
+			<div class="caja"><img src="logo.png"></div>
+		</figure>
+		<section>
+			 <h2>REGISTRATE</h2>
+				Nombre y apellido<br>
+				<input type="text" name="" id="nom"><br>
+				Email<br>
+                <input type="text" name=""><br>
+                Asunto<br>
+                <input type="text" name=""><br>
+                Teléfono<br>
+                <input type="text" name=""><br><br>
+                <input type="button"   onclick="Mensaje();"  value="REGISTRAR">  <br>
+                    
+			 
+		</section>
+		<div class="formulario">
+			<h2>CONVERTIDOR DE DOLÁRES A BOLIVIANOS</h2>
+			 
+				<input type="text" name="" id="valor"><br><br>
+				<input type="button" name="" onclick="Mensaje2()" value="CONVERTIR"><br>
+		</div>
+		<footer>
+			<div class="subcaja">
+				<h3>MISIÓN</h3>
+				<p>
+					Contribuir al desarrollo económico y social de nuestro país en armonía con el Medio Ambiente y la Madre Tierra.
+				</p>
+			</div>
+			<div class="subcaja">
+				<h3>VISIÓN</h3>
+				<p>
+					Constituirnos en un referente del cuidado y protección del Medio Ambiente y la Madre Tierra por nuestra comunidad y nuestra amada patria.
+				</p>
+			</div>
+			<div class="subcaja">
+				<h3>CONTACTOS</h3> 
+				<p>
+				<i class="fa-brands fa-whatsapp"></i> 77150336<br>
+				<i class="fa-solid fa-phone"></i>77150336<br>
+				<i class="fa-solid fa-location-dot"></i> Caracollo- Oruro <br>
+				<i class="fa-solid fa-envelope"></i> manitosverdesalaobra@gmail.com<br>
+				</p>
+			</div>
+			<div class="subcaja">
+				<h3>REDES SOCIALES </h3>
+				<p>
+					<i class="fa-brands fa-facebook"></i>https://www.facebook.com/profile.php?id=100083579251873<br>
+					<i class="fa-brands fa-twitter"></i> https://www.tiktok.com/@manitos_verdes_a_la_obra<br>
+					<i class="fa-brands fa-youtube"></i> Youtube<br>
+					<i class="fa-brands fa-instagram"></i> Instagram<br>
+				</p>
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>
