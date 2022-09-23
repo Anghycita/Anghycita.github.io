@@ -23,7 +23,7 @@
 			border: 2px #00FF33 solid;
 			padding: 10px;
 			margin: 15px;
-			color: white;
+			color: salmon;
 		} 		
 		.menu{
 			width: 60%;		
@@ -40,7 +40,7 @@
 	    	
 	    	width: 135px;
 	    	padding: 10px;
-	    		background:#5f72a9;
+	    		background:salmon;
 	    		text-align: center;
 	    		text-transform: uppercase;
 	    		
@@ -112,6 +112,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           alert(resultado);
 
 	 }
+	 function Mensaje3(){
+	 	var numero=document.getElementById("valor1").value;
+        var resultado=numero/6.96; 
+          alert(resultado);
+
+	 }
 </script>
 </head>
 <body>
@@ -158,6 +164,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 				<input type="text" name="" id="valor"><br><br>
 				<input type="button" name="" onclick="Mensaje2()" value="CONVERTIR"><br>
 		</div>
+		<div class="formulario">
+			<h2>CONVERTIDOR DE BOLIVIANOS A DOLÁRES</h2>
+			 
+				<input type="text" name="" id="valor1"><br><br>
+				<input type="button" name="" onclick="Mensaje3()" value="CONVERTIR"><br>
+		</div>
+		<div class="logo">
+				<center><strong>MANITOS VERDES A LA OBRA</strong></center>
+			</div>
 		<footer>
 			<div class="subcaja">
 				<h3>MISIÓN</h3>
